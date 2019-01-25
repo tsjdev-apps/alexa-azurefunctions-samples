@@ -1,0 +1,98 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "calculator",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddIntent",
+                    "slots": [
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "what is the result of the addition of {firstnum} and {secondnum}",
+                        "add {firstnum} and {secondnum}"
+                    ]
+                },
+                {
+                    "name": "SubstractIntent",
+                    "slots": [
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "what is the result of the subtraction of {secondnum} from {firstnum}",
+                        "subtract {secondnum} from {firstnum}"
+                    ]
+                },
+                {
+                    "name": "MultiplyIntent",
+                    "slots": [
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "what is the result of the multiplication of {firstnum} and {secondnum}",
+                        "multiply {firstnum} and {secondnum}"
+                    ]
+                },
+                {
+                    "name": "DivideIntent",
+                    "slots": [
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "what is the result of the division of {secondnum} from {firstnum}",
+                        "divide {secondnum} from {firstnum}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
